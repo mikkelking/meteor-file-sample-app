@@ -4,6 +4,8 @@ head
   title fileCollection test app
   meta(name="description" content="")
   meta(name="viewport" content="width=device-width")
+  meta(http-equiv="Content-Security-Policy" content="img-src 'self' data: blob:")
+  meta(http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *;img-src 'self' http://meteor.local https://openweathermap.org http://openweathermap.org data: blob: file: filesystem:; font-src 'self' data:; media-src 'self' blob: data: file: http://meteor.local")
 
 body
   div.ui.container(id="fileDropID")
